@@ -9,7 +9,7 @@ server.get('/dia2/corprimaria/:cor', (req, resp) => {
     try{
         const {cor} = req.params;
         const primaria = corPrimaria(cor);
-        resp.send({P
+        resp.send({
             primaria: primaria
         })
     } 
@@ -69,4 +69,4 @@ server.post('/dia2/maiorNumero', (req, resp) => {
     }
 })
 
-export default server
+export default server;
